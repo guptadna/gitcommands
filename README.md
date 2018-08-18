@@ -1,7 +1,7 @@
 Git commands
 =====
 
-****Check if ssh is already available***
+***Check if ssh is already present***
 ```
 ls -al ~/.ssh
 ```
