@@ -56,3 +56,20 @@ ssh-add ~/.ssh/id_rsa                 // Adds the relevant ssh key
 ssh-add -D
 ssh-add ~/.ssh/id_rsa_work
 ```
+
+***Config git***
+
+```
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+
+git config --list
+```
+
+***few basic command***
+
+```
+git reset --hard HEAD  -------Discard all local changes in working directory
+git reset --hard origin/master  -------Discard all local changes in working directory
+git checkout master -- set pointer to local master
+```
