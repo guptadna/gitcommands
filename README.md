@@ -25,6 +25,11 @@ ssh-add ~/.ssh/id_rsa
 ssh-add ~/.ssh/id_rsa_work
 ```
 
+***Copy ssh key public***
+
+```
+pbcopy < ~/.ssh/id_rsa.pub
+```
 
 ***Config***
 ```
