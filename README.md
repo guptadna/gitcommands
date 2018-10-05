@@ -16,7 +16,7 @@ ssh-keygen -t rsa -C "workmail@gmail.com" -f "id_rsa_work"
 
 **Make sure ssh agent is running**
 ```
-eval "$(ssh-agent -s)
+eval "$(ssh-agent -s)"
 ```
 
 ***Register the new ssh key***
