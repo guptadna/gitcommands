@@ -78,3 +78,5 @@ git reset --hard HEAD  -------Discard all local changes in working directory
 git reset --hard origin/master  -------Discard all local changes in working directory
 git checkout master -- set pointer to local master
 ```
+
+new fork from rdntech14
