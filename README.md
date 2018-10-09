@@ -79,4 +79,44 @@ git reset --hard origin/master  -------Discard all local changes in working dire
 git checkout master -- set pointer to local master
 ```
 
-new fork from rdntech14
+
+
+
+I forked a GitHub repo thoughtbot/dotfiles to croaky/dotfiles and want to keep it updated.
+
+Add upstream to git clone fork
+
+git remote add upstream git@github.com:thoughtbot/dotfiles.git
+
+Rebase local upstream/master
+
+```
+git fetch upstream
+git rebase upstream/master
+```
+
+Commit local upstream to remote upstream, usually we will not have right access.
+
+```
+git checkout -b upstream upstream/master
+```
+
+Git fetch - bring changes from remote branches to local remote branches but does not impact local local( heads) branches. 
+
+Git pull = git fetch + git merge
+
+Git merge —> this will update local 
+Copy.
+
+Only bring remote repo changes into remote snapshots, does not effect local copies. 
+
+```
+Git fetch origin
+Git fetch upstream
+```
+
+Git fetch will download changes to remote but will not uodate working copy ( safe)
+
+Git pull will download changes to remote and update working copy also. Has to deal with merge conflicts.
+
+
