@@ -128,7 +128,7 @@ git log
 **How to delete last two pushed commits**
 
 ```
-git rebase -i HEAD~2
-git pull --force
+git reset HEAD^ --hard
+git push --force
 ```
 
