@@ -119,4 +119,16 @@ Git fetch will download changes to remote but will not uodate working copy ( saf
 
 Git pull will download changes to remote and update working copy also. Has to deal with merge conflicts.
 
+******************************
+
+```
+git log
+```
+
+**How to delete last two pushed commits**
+
+```
+git revert head~2
+git pull --force
+```
 
