@@ -182,6 +182,8 @@ git reset --hard upstream/master
 
 **************************** Git process Work flow  ****************************
 
+```
+
 1) main branch
 https://git.com/Main/projectname.git
 
@@ -232,9 +234,11 @@ git push -u origin <featureBranch>
 
 11) Create pull request based off <featureBranch>
 
+```
 
 ******************** how to update fork ****************************
 
+```
 git clone  https://git.com/user/projectname.git
 cd LiftOff-ProcessEngine/
 git remote add upstream https://git.com/Main/projectname.git
@@ -243,11 +247,14 @@ git pull upstream master
 git remote -v
 git push
 
+```
 ******************** how to stash commands ****************************
 
+```
 git stash save "comments"
 git stash list
 git stash apply stash@{0}
 git stash drop stash@{0}
 git stash pop  # apply and drop stash at the same time
 
+```
