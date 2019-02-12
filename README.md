@@ -182,16 +182,18 @@ git reset --hard upstream/master
 
 **************************** Git process Work flow  ****************************
 
-```
+
 
 1) main branch
+```
 https://git.com/Main/projectname.git
-
+```
 2) Create a fork off main branch from git GUI
 
 3) clone fork on local
+```
 git clone https://git.com/user/projectname.git
-
+```
 4) Add main branch to local master as upstream
 ```
 git remote add upstream https://git.com/Main/projectname.git
@@ -226,7 +228,9 @@ git merge upstream/master
 ```
 
 8) Push upstream changes to Remote Fork ( so upstream, fork master, local master can be insync)
+```
 git push
+```
 
 9) rebase local master with branch
 ```
@@ -246,7 +250,6 @@ git push -u origin <featureBranch>
 
 11) Create pull request based off <featureBranch>
 
-```
 
 ******************** how to update fork ****************************
 
