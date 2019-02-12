@@ -132,3 +132,122 @@ git reset HEAD~2 --hard
 git push --force
 ```
 
+
+
+
+
+
+
+
+
+
+612  git clone https://git.com/user/projectname.git
+613  git remote -v
+614  pwd
+615  cd mountebank
+616  git remote -v
+617  git remote add upstream https://git.com/Mian/projectname.git
+618  git remote -v
+619  git add .
+620  git commit -m "AG | my first commit"
+621  git status
+622  git push
+623  history
+
+
+git branch
+git branch <branchName>
+git checkout <branchName> -- set pointer to local branch
+git checkout master -- set pointer to local master
+git diff  --> shows changed files
+git branch -d <branchName>   # to delete a branch
+
+git add <fileName>
+git rm <fileName>
+
+git reset --hard ----- to reset staging and local copy to recent commit changes
+git reset --hard HEAD  -------Discard all local changes in working directory
+git reset --hard origin/master  -------Discard all local changes in working directory
+
+git branch -r   -- To know branches on remote
+
+git checkout --> shows the changed files
+
+git remote -v
+How to reset Git local brach with upstream or origin
+**************************** Reset local master with upstream/master ****************************
+git checkout master
+git reset --hard upstream/master
+
+
+**************************** Git process Work flow  ****************************
+
+1) main branch
+https://git.com/Main/projectname.git
+
+2) Create a fork off main branch from git GUI
+
+3) clone fork on local
+git clone https://git.com/user/projectname.git
+
+4) Add main branch to local master as upstream
+git remote add upstream https://git.com/Main/projectname.git
+git remote -v
+
+
+5) Create a new branch off local master
+git branch <featureBranch>
+git checkout <featureBranch>
+
+6) Update code ( fix problem or enhance functionality) in local branches and add it to stag
+git checkout <featureBranch>
+git status
+git add <changedFiles>
+git commit -m "Updated readme"
+
+
+7) Checkout to master branch and Pull upstream changes to local master ( if someone has committed new changes)
+git checkout master
+git pull upstream master
+
+or
+
+git fetch upstream
+git checkout master
+git merge upstream/master
+
+8) Push upstream changes to Remote Fork ( so upstream, fork master, local master can be insync)
+git push
+
+9) rebase local master with branch
+git rebase master <featureBranch>
+
+or
+
+or git checkout <featureBranch>
+git rebase master
+
+10) push local branch to origin as new branch
+git push -u origin <featureBranch>
+
+11) Create pull request based off <featureBranch>
+
+
+******************** how to update fork ****************************
+
+git clone  https://git.com/user/projectname.git
+cd LiftOff-ProcessEngine/
+git remote add upstream https://git.com/Main/projectname.git
+git remote -v
+git pull upstream master
+git remote -v
+git push
+
+******************** how to stash commands ****************************
+
+git stash save "comments"
+git stash list
+git stash apply stash@{0}
+git stash drop stash@{0}
+git stash pop  # apply and drop stash at the same time
+
