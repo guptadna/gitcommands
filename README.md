@@ -193,22 +193,27 @@ https://git.com/Main/projectname.git
 git clone https://git.com/user/projectname.git
 
 4) Add main branch to local master as upstream
+```
 git remote add upstream https://git.com/Main/projectname.git
 git remote -v
-
+```
 
 5) Create a new branch off local master
+```
 git branch <featureBranch>
 git checkout <featureBranch>
+```
 
 6) Update code ( fix problem or enhance functionality) in local branches and add it to stag
+```
 git checkout <featureBranch>
 git status
 git add <changedFiles>
 git commit -m "Updated readme"
-
+```
 
 7) Checkout to master branch and Pull upstream changes to local master ( if someone has committed new changes)
+```
 git checkout master
 git pull upstream master
 
@@ -218,19 +223,26 @@ git fetch upstream
 git checkout master
 git merge upstream/master
 
+```
+
 8) Push upstream changes to Remote Fork ( so upstream, fork master, local master can be insync)
 git push
 
 9) rebase local master with branch
+```
 git rebase master <featureBranch>
 
 or
 
 or git checkout <featureBranch>
 git rebase master
+```
 
 10) push local branch to origin as new branch
+
+```
 git push -u origin <featureBranch>
+```
 
 11) Create pull request based off <featureBranch>
 
