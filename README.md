@@ -30,6 +30,9 @@ ssh-add ~/.ssh/id_rsa_work
 ```
 pbcopy < ~/.ssh/id_rsa.pub
 ```
+***Paste ssh key ***
+
+User Account --> Settings --> SSH and GPC key --> New SSH Key 
 
 ***Config***
 ```
