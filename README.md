@@ -171,23 +171,27 @@ git push --force
 
 
 
+```
 
 
 
-612  git clone https://git.com/user/projectname.git
-613  git remote -v
-614  pwd
-615  cd mountebank
-616  git remote -v
-617  git remote add upstream https://git.com/Mian/projectname.git
-618  git remote -v
-619  git add .
-620  git commit -m "AG | my first commit"
-621  git status
-622  git push
-623  history
+git clone https://git.com/user/projectname.git
+git remote -v
+pwd
+cd mountebank
+git remote -v
+git remote add upstream https://git.com/Mian/projectname.git
+git remote -v
+git add .
+git commit -m "AG | my first commit"
+git status
+git push
+history
+
+```
 
 
+```
 git branch
 git branch <branchName>
 git checkout <branchName> -- set pointer to local branch
@@ -207,6 +211,9 @@ git branch -r   -- To know branches on remote
 git checkout --> shows the changed files
 
 git remote -v
+
+```
+
 How to reset Git local brach with upstream or origin
 **************************** Reset local master with upstream/master ****************************
 git checkout master
