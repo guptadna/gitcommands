@@ -41,6 +41,16 @@ touch config           // Creates the file if not exists
 code config            // Opens the file in VS code, use any editor
 ```
 
+***Config git***
+
+```
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+
+git config --list
+```
+
+**Multiple SSH Account**
 ```
 ##Office account - the default 
 Host github.com
@@ -67,7 +77,6 @@ git clone git@<hostname defined under rdntech14 in config>/<whateverusername>/<R
 git clone git@rdntech14github.com/rdntech14/<RepoName>.git
 ```
 
-***
 
 ***One active SSH key in the ssh-agent at a time***
 
@@ -80,14 +89,7 @@ ssh-add -D
 ssh-add ~/.ssh/id_rsa_work
 ```
 
-***Config git***
 
-```
-git config --global user.name "John Doe"
-git config --global user.email johndoe@example.com
-
-git config --list
-```
 ***Common Error***
 
 ```
