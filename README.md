@@ -115,7 +115,9 @@ git checkout master -- set pointer to local master
 
 I forked a GitHub repo thoughtbot/dotfiles to croaky/dotfiles and want to keep it updated.
 
+```
 Add upstream to git clone fork
+```
 
 git remote add upstream git@github.com:thoughtbot/dotfiles.git
 
