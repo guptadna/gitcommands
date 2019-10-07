@@ -307,3 +307,11 @@ git stash drop stash@{0}
 git stash pop  # apply and drop stash at the same time
 
 ```
+
+**************************** Amend commit so no more commit history get created ****************************
+
+```
+git commit --amend --no-edit
+git push -f
+
+```
