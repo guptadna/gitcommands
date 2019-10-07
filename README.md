@@ -155,7 +155,9 @@ Git pull will download changes to remote and update working copy also. Has to de
 ******************************
 
 ```
-git log
+git log --oneline
+git log --pretty=oneline
+git log --oneline <branchName>
 ```
 
 **How to delete last two pushed commits**
@@ -165,16 +167,7 @@ git reset HEAD~2 --hard
 git push --force
 ```
 
-
-
-
-
-
-
 ```
-
-
-
 git clone https://git.com/user/projectname.git
 git remote -v
 pwd
@@ -189,7 +182,6 @@ git push
 history
 
 ```
-
 
 ```
 git branch
@@ -215,10 +207,12 @@ git remote -v
 ```
 
 How to reset Git local brach with upstream or origin
+
 **************************** Reset local master with upstream/master ****************************
+```
 git checkout master
 git reset --hard upstream/master
-
+```
 
 **************************** Git process Work flow  ****************************
 
