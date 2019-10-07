@@ -40,19 +40,34 @@ cd ~/.ssh/
 touch config           // Creates the file if not exists
 code config            // Opens the file in VS code, use any editor
 ```
+
 ```
-Personal account - the default config
+##Office account - the default 
 Host github.com
    HostName github.com
    User git
    IdentityFile ~/.ssh/id_rsa
 
-Work account-1
-Host github.com-work_user1
+#Personal account - rdntech14
+Host rdntech14github.com
    HostName github.com
    User git
-   IdentityFile ~/.ssh/id_rsa_work
+   IdentityFile ~/.ssh/id_rsa_rdntech14
 ```
+
+***to access any git repo using *the default* config***
+
+```
+git clone git@github.com/<whateverusername>/<RepoName>.git
+```
+***to access any git repo using *rdntech14 or non default* config**
+
+```
+git clone git@<hostname defined under rdntech14 in config>/<whateverusername>/<RepoName>.git
+git clone git@rdntech14github.com/rdntech14/<RepoName>.git
+```
+
+***
 
 ***One active SSH key in the ssh-agent at a time***
 
@@ -73,7 +88,18 @@ git config --global user.email johndoe@example.com
 
 git config --list
 ```
+***Common Error***
 
+```
+The authenticity of host 'domain.com (a.b.c.d)' can't be established.
+RSA key fingerprint is XX:XX:...:XX.
+Are you sure you want to continue connecting (yes/no)?
+```
+***Solution*** 
+We need to add host key to known_hosts file. Following command add automatically.
+```
+ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+```
 ***few basic command***
 
 ```
